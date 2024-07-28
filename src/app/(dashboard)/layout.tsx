@@ -5,10 +5,11 @@ import Sidebar from "@/components/layouts/Sidebar";
 import Header from "@/components/layouts/Header";
 import NextAuthProvider from "@/context/NextAuthProvider";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+
 import { redirect } from "next/navigation";
 import { Separator } from "@radix-ui/react-separator";
 import { Toaster } from "@/components/ui/toaster";
+import { authOptions } from "@/lib/authOptions";
 
 const epilogue = Epilogue({ subsets: ["latin"] });
 

@@ -7,8 +7,9 @@ import OverviewPage from "@/components/forms/OverviewForm";
 import SocialMediaForm from "@/components/forms/SocialMediaForm";
 import TeamForm from "@/components/forms/TeamForm";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
 import prisma from "../../../../lib/prisma";
+import { authOptions } from "@/lib/authOptions";
 
 interface SettingsPageProps {}
 

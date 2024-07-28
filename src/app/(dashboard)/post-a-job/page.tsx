@@ -40,6 +40,7 @@ import { useSession } from "next-auth/react";
 import moment from "moment";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
+import Link from "next/link";
 
 interface PostJobPageProps {}
 
@@ -103,10 +104,12 @@ const PostJobPage: FC<PostJobPageProps> = ({}) => {
 
 	return (
 		<div>
+			<Link href="/">
 			<div className="inline-flex items-center gap-2 cursor-pointer hover:text-primary">
 				<ArrowLeftIcon className="w-7 h-7" />
 				<span className="text-2xl font-semibold">Post a Job</span>
 			</div>
+			</Link>
 
 			<div className="my-5">
 				<div className="text-lg font-semibold">Basic Information</div>

@@ -17,10 +17,11 @@ import { useRouter } from "next/navigation";
 import ButtonActionTable from "@/components/organisms/ButtonActionTable";
 import prisma from "../../../../lib/prisma";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
 import { Job } from "@prisma/client";
 import { dateFormat } from "@/lib/utils";
 import moment from "moment";
+import { authOptions } from "@/lib/authOptions";
 
 interface JobListingsPageProps {}
 
